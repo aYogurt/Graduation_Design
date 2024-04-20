@@ -1,0 +1,218 @@
+
+LogisticRegression(multi_class="multinomial"）：
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/03LogisticRegressionPre/LR_ModelEvaluation_50To200.py
+Start running time: 2022-04-18 21:19:50.144868
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.723 seconds.
+Prefix dict has been built successfully.
+getPreResult() Start running time: 2022-04-18 21:20:51.805545
+(tfidfTrain.toarray()).shape : 
+(16556, 5000)
+(tfidfTest.toarray()).shape : 
+(6927, 5000)
+对训练集进行模型评估, Start running time: 2022-04-18 21:21:24.255535
+accuracy_score : 0.9313843923653057
+precision_score :  0.9391236958635611
+recall_score :  0.9167775721526109
+f1_score :  0.9236547495304519
+score :  0.9313843923653057
+End running time: 2022-04-18 21:21:24.522345
+Running time: 0:00:00.266810 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:21:24.561241
+accuracy_score : 0.8084307781146239
+precision_score :  0.8298936076073191
+recall_score :  0.7876913881177431
+f1_score :  0.793351842097891
+score :  0.8084307781146239
+End running time: 2022-04-18 21:21:24.664966
+Running time: 0:00:00.103725 Seconds
+
+getPreResult() End running time: 2022-04-18 21:21:24.675940
+Running time: 0:00:32.870395 Seconds
+
+End running time: 2022-04-18 21:21:24.675940
+Running time: 0:01:34.531072 Seconds
+
+Process finished with exit code 0
+
+"""
+
+
+LogisticRegression(multi_class="ovr"）：
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/03LogisticRegressionPre/LR_ModelEvaluation_50To200.py
+Start running time: 2022-04-18 21:22:48.475777
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.723 seconds.
+Prefix dict has been built successfully.
+getPreResult() Start running time: 2022-04-18 21:23:48.280306
+(tfidfTrain.toarray()).shape : 
+(16556, 5000)
+(tfidfTest.toarray()).shape : 
+(6927, 5000)
+对训练集进行模型评估, Start running time: 2022-04-18 21:24:14.558083
+accuracy_score : 0.9238946605460256
+precision_score :  0.9326192216688253
+recall_score :  0.9059051088483455
+f1_score :  0.9125809944790324
+score :  0.9238946605460256
+End running time: 2022-04-18 21:24:14.847049
+Running time: 0:00:00.288966 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:24:14.883949
+accuracy_score : 0.8074202396419806
+precision_score :  0.8219595081330866
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+recall_score :  0.7841385597452593
+f1_score :  0.7884150865716676
+score :  0.8074202396419806
+End running time: 2022-04-18 21:24:14.992752
+Running time: 0:00:00.108803 Seconds
+
+getPreResult() End running time: 2022-04-18 21:24:15.003680
+Running time: 0:00:26.723374 Seconds
+
+End running time: 2022-04-18 21:24:15.003680
+Running time: 0:01:26.527903 Seconds
+
+Process finished with exit code 0
+
+"""
+
+
+调参solver:
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/03LogisticRegressionPre/LR_ModelEvaluation_50To200.py
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Start running time: 2022-04-18 21:30:22.988860
+Loading model cost 0.724 seconds.
+Prefix dict has been built successfully.
+getPreResult() Start running time: 2022-04-18 21:31:24.281413
+(tfidfTrain.toarray()).shape : 
+(16556, 5000)
+(tfidfTest.toarray()).shape : 
+(6927, 5000)
+调参solver:  newton-cg
+对训练集进行模型评估, Start running time: 2022-04-18 21:32:30.857130
+accuracy_score : 0.9238946605460256
+precision_score :  0.9326192216688253
+recall_score :  0.9059051088483455
+f1_score :  0.9125809944790324
+score :  0.9238946605460256
+End running time: 2022-04-18 21:32:31.122973
+Running time: 0:00:00.265843 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:32:31.162025
+accuracy_score : 0.8074202396419806
+precision_score :  0.8219595081330866
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+recall_score :  0.7841385597452593
+f1_score :  0.7884150865716676
+score :  0.8074202396419806
+End running time: 2022-04-18 21:32:31.264979
+Running time: 0:00:00.102954 Seconds
+
+调参solver:  lbfgs
+对训练集进行模型评估, Start running time: 2022-04-18 21:32:54.385777
+accuracy_score : 0.9238946605460256
+precision_score :  0.9326192216688253
+recall_score :  0.9059051088483455
+f1_score :  0.9125809944790324
+score :  0.9238946605460256
+End running time: 2022-04-18 21:32:54.666075
+Running time: 0:00:00.280298 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:32:54.704929
+accuracy_score : 0.8074202396419806
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+precision_score :  0.8219595081330866
+recall_score :  0.7841385597452593
+f1_score :  0.7884150865716676
+score :  0.8074202396419806
+End running time: 2022-04-18 21:32:54.820619
+Running time: 0:00:00.115690 Seconds
+
+调参solver:  sag
+对训练集进行模型评估, Start running time: 2022-04-18 21:33:37.770386
+accuracy_score : 0.9238946605460256
+precision_score :  0.9326192216688253
+recall_score :  0.9059051088483455
+f1_score :  0.9125809944790324
+score :  0.9238946605460256
+End running time: 2022-04-18 21:33:38.013745
+Running time: 0:00:00.243359 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:33:38.051648
+accuracy_score : 0.8074202396419806
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+precision_score :  0.8219595081330866
+recall_score :  0.7841385597452593
+f1_score :  0.7884150865716676
+score :  0.8074202396419806
+End running time: 2022-04-18 21:33:38.153990
+Running time: 0:00:00.102342 Seconds
+
+
+
+调参solver:  saga
+
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\linear_model\_sag.py:354: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  ConvergenceWarning,
+对训练集进行模型评估, Start running time: 2022-04-18 21:37:19.727149
+accuracy_score : 0.9240154626721431
+precision_score :  0.9326398375678782
+recall_score :  0.9063648657997151
+f1_score :  0.9129075689525324
+score :  0.9240154626721431
+End running time: 2022-04-18 21:37:19.972008
+Running time: 0:00:00.244859 Seconds
+
+对测试集集进行模型评估, Start running time: 2022-04-18 21:37:20.012904
+accuracy_score : 0.8079976901977768
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+precision_score :  0.8221155216087758
+recall_score :  0.7851425090025401
+f1_score :  0.7894456899022375
+score :  0.8079976901977768
+End running time: 2022-04-18 21:37:20.119616
+Running time: 0:00:00.106712 Seconds
+
+getPreResult() End running time: 2022-04-18 21:37:20.133577
+Running time: 0:05:55.852164 Seconds
+
+End running time: 2022-04-18 21:37:20.133577
+Running time: 0:06:57.144717 Seconds
+
+Process finished with exit code 0
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

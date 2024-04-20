@@ -1,0 +1,85 @@
+
+multi_class : {'auto', 'ovr', 'multinomial'}, default='auto'
+If the option chosen is 'ovr', then a binary problem is fit for each label.
+For 'multinomial' the loss minimised is the multinomial loss fit across the entire probability distribution, *even when the data is binary*.
+'multinomial' is unavailable when solver='liblinear'.
+'auto' selects 'ovr' if the data is binary, or if solver='liblinear', and otherwise selects 'multinomial'.
+如果选择的选项是“ovr”，则每个标签都适合一个二进制问题。
+对于“多项式”而言，最小损失是整个概率分布中的多项式损失拟合，*即使数据是二进制的*。
+当solver='liblinear'时，“多项式”不可用。
+如果数据是二进制的，“auto”选择“ovr”，或者如果solver='liblinear'，否则选择“多项式”。
+----------------------------------------------------------------------------------------------
+    random_state : int, RandomState instance, default=None
+        Used when ``solver`` == 'sag', 'saga' or 'liblinear' to shuffle thedata.
+        当“`solver`=='sag'、'saga'或'liblinear'时使用，以洗牌数据。
+        See :term:`Glossary <random_state>` for details.
+
+----------------------------------------------------------------------------------------------
+    solver : {'newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'}, \
+            default='lbfgs'
+
+        Algorithm to use in the optimization problem. Default is 'lbfgs'.
+        To choose a solver, you might want to consider the following aspects:
+
+            - For small datasets, 'liblinear' is a good choice, whereas 'sag'
+              and 'saga' are faster for large ones;
+            - For multiclass problems, only 'newton-cg', 'sag', 'saga' and
+              'lbfgs' handle multinomial loss;
+            - 'liblinear' is limited to one-versus-rest schemes.
+            -对于小型数据集，“liblinear”是一个不错的选择，而对于大型数据集，“sag”和“saga”更快；
+            -对于多类问题，只有“newton cg”、“sag”、“saga”和“lbfgs”处理多项式损失；
+            -“liblinear”仅限于一对一方案。
+
+        .. warning::
+           The choice of the algorithm depends on the penalty chosen:
+           Supported penalties by solver:
+            算法的选择取决于选择的惩罚：
+            由解算器支持的惩罚：
+
+           - 'newton-cg'   -   ['l2', 'none']
+           - 'lbfgs'       -   ['l2', 'none']
+           - 'liblinear'   -   ['l1', 'l2']
+           - 'sag'         -   ['l2', 'none']
+           - 'saga'        -   ['elasticnet', 'l1', 'l2', 'none']
+
+        .. note::
+           'sag' and 'saga' fast convergence is only guaranteed on features with approximately the same scale.
+           You can preprocess the data with a scaler from :mod:`sklearn.preprocessing`.
+           “sag”和“saga”的快速收敛仅在规模大致相同的功能上得到保证。
+            您可以使用scaler从以下位置预处理数据：mod:`sklearn.preprocessing`。
+
+        .. seealso:: 参见
+           Refer to the User Guide for more information regarding
+           :class:`LogisticRegression` and more specifically the
+           `Table <https://scikit-learn.org/dev/modules/linear_model.html#logistic-regression>`_
+           summarazing solver/penalty supports.
+           <!--
+           # noqa: E501
+           -->
+            请参阅《用户指南》以了解有关以下内容的更多信息：class:`logisticRetression`和更具体地说是`Table'
+
+        .. versionadded:: 0.17
+           Stochastic Average Gradient descent solver.
+        .. versionadded:: 0.19
+           SAGA solver.
+        .. versionchanged:: 0.22
+            The default solver changed from 'liblinear' to 'lbfgs' in 0.22.
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

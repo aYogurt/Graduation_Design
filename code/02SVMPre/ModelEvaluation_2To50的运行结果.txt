@@ -1,0 +1,1521 @@
+max_features= 5000 :
+
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-19 00:59:59.967596
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.771 seconds.
+Prefix dict has been built successfully.
+getPreResult() Start running time: 2022-04-19 01:00:04.989208
+(tfidfTrain.toarray()).shape : 
+(773, 5000)
+(tfidfTest.toarray()).shape : 
+(383, 5000)
+对训练集进行模型评估, Start running time: 2022-04-19 01:00:11.995529
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         3
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       1.00      1.00      1.00        19
+          侵犯通信自由罪       1.00      1.00      1.00         1
+           信用证诈骗罪       1.00      1.00      1.00         7
+            倒卖文物罪       1.00      1.00      1.00        32
+            假冒专利罪       1.00      1.00      1.00         2
+      出具证明文件重大失实罪       1.00      1.00      1.00        10
+         出售出入境证件罪       1.00      1.00      1.00         9
+            刑讯逼供罪       1.00      1.00      1.00         9
+       利用未公开信息交易罪       1.00      1.00      1.00         5
+         劫夺被押解人员罪       1.00      1.00      1.00         7
+            医疗事故罪       1.00      1.00      1.00        14
+          危害公共安全罪       1.00      1.00      1.00         6
+            变造货币罪       1.00      1.00      1.00         3
+       吸收客户资金不入账罪       1.00      1.00      1.00         6
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        19
+            妨害清算罪       1.00      1.00      1.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         2
+        工程重大安全事故罪       1.00      1.00      1.00        14
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         2
+          引诱幼女卖淫罪       1.00      1.00      1.00         2
+      引诱未成年人聚众淫乱罪       1.00      1.00      1.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       0.97      1.00      0.98        31
+          打击报复证人罪       1.00      1.00      1.00        25
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00         9
+          扰乱法庭秩序罪       1.00      1.00      1.00        21
+        投放虚假危险物质罪       1.00      0.92      0.96        12
+        提供虚假证明文件罪       1.00      1.00      1.00        19
+        擅自设立金融机构罪       1.00      1.00      1.00         4
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         3
+            放纵走私罪       1.00      1.00      1.00         4
+          故意损毁文物罪       1.00      1.00      1.00        12
+        故意泄露国家秘密罪       1.00      1.00      1.00        19
+      教育设施重大安全事故罪       1.00      1.00      1.00         7
+            暴力取证罪       1.00      1.00      1.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         7
+              洗钱罪       1.00      1.00      1.00        14
+          消防责任事故罪       1.00      1.00      1.00        13
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         1
+        煽动颠覆国家政权罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00        15
+          破坏交通工具罪       1.00      1.00      1.00        24
+            破坏军婚罪       1.00      1.00      1.00         7
+            破坏选举罪       1.00      1.00      1.00         3
+          私放在押人员罪       1.00      1.00      1.00         6
+        组织出卖人体器官罪       1.00      1.00      1.00         7
+组织未成年人进行违反治安管理活动罪       1.00      1.00      1.00        10
+            组织越狱罪       1.00      1.00      1.00         2
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       1.00      1.00      1.00         9
+              虐待罪       1.00      1.00      1.00        28
+          虐待被监管人罪       1.00      1.00      1.00        23
+            虚假广告罪       1.00      1.00      1.00         7
+            虚假诉讼罪       1.00      1.00      1.00        19
+          走私制毒物品罪       1.00      1.00      1.00         7
+          走私淫秽物品罪       1.00      1.00      1.00         2
+          走私贵重金属罪       1.00      1.00      1.00         8
+            过失决水罪       1.00      1.00      1.00         1
+        过失损坏交通设施罪       1.00      1.00      1.00         1
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         3
+        过失损坏电力设备罪       1.00      1.00      1.00        13
+          过失损毁文物罪       1.00      1.00      1.00         5
+            过失爆炸罪       1.00      1.00      1.00         8
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        14
+        违规出具金融票证罪       1.00      1.00      1.00         7
+          逃避追缴欠税罪       1.00      1.00      1.00         7
+          金融凭证诈骗罪       1.00      1.00      1.00        25
+         销售侵权复制品罪       1.00      1.00      1.00        12
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       1.00      1.00      1.00         2
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         9
+     非法出售增值税专用发票罪       1.00      1.00      1.00        14
+        非法利用信息网络罪       1.00      1.00      1.00         3
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      1.00      1.00         4
+        非法经营同类营业罪       1.00      1.00      1.00         4
+          颠覆国家政权罪       1.00      1.00      1.00         1
+          食品监管渎职罪       1.00      1.00      1.00        32
+          骗取出口退税罪       1.00      1.00      1.00        25
+          骗取出境证件罪       1.00      1.00      1.00        16
+            骗购外汇罪       1.00      1.00      1.00         2
+
+         accuracy                           1.00       773
+        macro avg       1.00      1.00      1.00       773
+     weighted avg       1.00      1.00      1.00       773
+
+
+
+score: 0.9987063389391979
+对训练集进行模型评估, End running time: 2022-04-19 01:00:25.275161
+Running time: 0:00:13.279632 Seconds
+对测试集进行模型评估, Start running time: 2022-04-19 01:00:25.275161
+
+对测试集进行模型评估：
+classification_report: 
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       0.00      0.00      0.00         2
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.57      0.89      0.70         9
+          侵犯通信自由罪       0.00      0.00      0.00         1
+           信用证诈骗罪       0.00      0.00      0.00         3
+            倒卖文物罪       0.87      0.87      0.87        15
+            假冒专利罪       1.00      1.00      1.00         1
+      出具证明文件重大失实罪       0.50      0.40      0.44         5
+         出售出入境证件罪       1.00      0.20      0.33         5
+            刑讯逼供罪       1.00      0.75      0.86         4
+       利用未公开信息交易罪       1.00      1.00      1.00         3
+         劫夺被押解人员罪       1.00      1.00      1.00         3
+            医疗事故罪       1.00      1.00      1.00         6
+          危害公共安全罪       0.00      0.00      0.00         3
+            变造货币罪       1.00      1.00      1.00         2
+       吸收客户资金不入账罪       1.00      0.67      0.80         3
+      失职致使在押人员脱逃罪       0.82      1.00      0.90         9
+            妨害清算罪       0.00      0.00      0.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         1
+        工程重大安全事故罪       0.70      1.00      0.82         7
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         2
+          引诱幼女卖淫罪       1.00      0.50      0.67         2
+      引诱未成年人聚众淫乱罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       0.48      1.00      0.65        14
+          打击报复证人罪       0.67      0.73      0.70        11
+      扰乱国家机关工作秩序罪       0.67      1.00      0.80         4
+          扰乱法庭秩序罪       0.91      1.00      0.95        10
+        投放虚假危险物质罪       0.80      0.67      0.73         6
+        提供虚假证明文件罪       0.75      0.67      0.71         9
+        擅自设立金融机构罪       1.00      0.50      0.67         2
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         2
+            放纵走私罪       1.00      0.67      0.80         3
+          故意损毁文物罪       0.71      0.83      0.77         6
+        故意泄露国家秘密罪       1.00      1.00      1.00         9
+      教育设施重大安全事故罪       0.75      0.75      0.75         4
+            暴力取证罪       0.00      0.00      0.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         3
+              洗钱罪       1.00      0.71      0.83         7
+          消防责任事故罪       0.75      1.00      0.86         6
+          煽动分裂国家罪       0.67      1.00      0.80         2
+      煽动暴力抗拒法律实施罪       0.00      0.00      0.00         1
+        煽动颠覆国家政权罪       0.00      0.00      0.00         1
+          环境监管失职罪       0.78      1.00      0.88         7
+          破坏交通工具罪       0.77      0.91      0.83        11
+            破坏军婚罪       1.00      0.75      0.86         4
+            破坏选举罪       1.00      1.00      1.00         2
+          私放在押人员罪       0.00      0.00      0.00         3
+        组织出卖人体器官罪       1.00      1.00      1.00         3
+组织未成年人进行违反治安管理活动罪       0.75      0.60      0.67         5
+            组织越狱罪       1.00      1.00      1.00         1
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       0.57      1.00      0.73         4
+              虐待罪       0.76      1.00      0.87        13
+          虐待被监管人罪       0.77      1.00      0.87        10
+            虚假广告罪       1.00      1.00      1.00         3
+            虚假诉讼罪       0.88      0.78      0.82         9
+          走私制毒物品罪       1.00      0.67      0.80         3
+          走私淫秽物品罪       0.00      0.00      0.00         2
+          走私贵重金属罪       0.80      1.00      0.89         4
+            过失决水罪       0.00      0.00      0.00         1
+        过失损坏交通设施罪       0.00      0.00      0.00         1
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         2
+        过失损坏电力设备罪       0.71      0.83      0.77         6
+          过失损毁文物罪       0.00      0.00      0.00         3
+            过失爆炸罪       1.00      1.00      1.00         4
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         6
+        违规出具金融票证罪       1.00      1.00      1.00         3
+          逃避追缴欠税罪       1.00      0.67      0.80         3
+          金融凭证诈骗罪       0.62      0.73      0.67        11
+         销售侵权复制品罪       1.00      1.00      1.00         6
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       0.00      0.00      0.00         2
+   非法低价出让国有土地使用权罪       0.67      1.00      0.80         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         4
+     非法出售增值税专用发票罪       0.86      1.00      0.92         6
+        非法利用信息网络罪       0.50      1.00      0.67         2
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       0.00      0.00      0.00         2
+        非法经营同类营业罪       0.00      0.00      0.00         2
+          颠覆国家政权罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.97        15
+          骗取出口退税罪       1.00      1.00      1.00        12
+          骗取出境证件罪       0.70      0.88      0.78         8
+            骗购外汇罪       1.00      1.00      1.00         1
+
+         accuracy                           0.80       383
+        macro avg       0.66      0.67      0.65       383
+     weighted avg       0.75      0.80      0.76       383
+
+
+
+score: 0.7963446475195822
+对测试集进行模型评估, End running time: 2022-04-19 01:00:31.806753
+Running time: 0:00:06.531592 Seconds
+
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-17 15:45:55.689346
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 1.695 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 15:46:08.447255
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\feature_extraction\text.py:401: UserWarning: Your stop_words may be inconsistent with your preprocessing. Tokenizing the stop words generated tokens ['lex', '①①', '①②', '①③', '①④', '①⑤', '①⑥', '①⑦', '①⑧', '①⑨', '①ａ', '①ｂ', '①ｃ', '①ｄ', '①ｅ', '①ｆ', '①ｇ', '①ｈ', '①ｉ', '①ｏ', '②①', '②②', '②③', '②④', '②⑤', '②⑥', '②⑦', '②⑧', '②⑩', '②ａ', '②ｂ', '②ｄ', '②ｅ', '②ｆ', '②ｇ', '②ｈ', '②ｉ', '②ｊ', '③①', '③⑩', '③ａ', '③ｂ', '③ｃ', '③ｄ', '③ｅ', '③ｆ', '③ｇ', '③ｈ', '④ａ', '④ｂ', '④ｃ', '④ｄ', '④ｅ', '⑤ａ', '⑤ｂ', '⑤ｄ', '⑤ｅ', '⑤ｆ', '１２', 'ｌｉ', 'ｚｘｆｉｔｌ'] not in stop_words.
+  % sorted(inconsistent)
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:680: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  UserWarning,
+cv=5的分数为:  [0.76724138 0.77489177 0.8008658  0.75757576 0.74891775]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:680: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  UserWarning,
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([4.67604733, 4.24871254, 4.10622978, 4.75519776, 4.79229379]), 'score_time': array([1.28858495, 0.93496561, 0.96721745, 1.04511881, 1.08393931]), 'test_precision_macro': array([0.58652313, 0.61431409, 0.63093607, 0.57808201, 0.60166789]), 'train_precision_macro': array([0.99101756, 0.98524075, 0.98304218, 0.99608608, 0.99236744]), 'test_recall_macro': array([0.59498225, 0.6042381 , 0.66258969, 0.6121746 , 0.60709064]), 'train_recall_macro': array([0.97756565, 0.98186794, 0.97953137, 0.99102368, 0.98294923]), 'test_f1_macro': array([0.57671172, 0.593465  , 0.63043589, 0.57828996, 0.58345338]), 'train_f1_macro': array([0.98156225, 0.97845062, 0.97517151, 0.99305718, 0.98578684])}
+getCVResult() End running time: 2022-04-17 15:47:34.040161
+Running time: 0:01:25.592906 Seconds
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\feature_extraction\text.py:401: UserWarning: Your stop_words may be inconsistent with your preprocessing. Tokenizing the stop words generated tokens ['lex', '①①', '①②', '①③', '①④', '①⑤', '①⑥', '①⑦', '①⑧', '①⑨', '①ａ', '①ｂ', '①ｃ', '①ｄ', '①ｅ', '①ｆ', '①ｇ', '①ｈ', '①ｉ', '①ｏ', '②①', '②②', '②③', '②④', '②⑤', '②⑥', '②⑦', '②⑧', '②⑩', '②ａ', '②ｂ', '②ｄ', '②ｅ', '②ｆ', '②ｇ', '②ｈ', '②ｉ', '②ｊ', '③①', '③⑩', '③ａ', '③ｂ', '③ｃ', '③ｄ', '③ｅ', '③ｆ', '③ｇ', '③ｈ', '④ａ', '④ｂ', '④ｃ', '④ｄ', '④ｅ', '⑤ａ', '⑤ｂ', '⑤ｄ', '⑤ｅ', '⑤ｆ', '１２', 'ｌｉ', 'ｚｘｆｉｔｌ'] not in stop_words.
+  % sorted(inconsistent)
+getPreResult() Start running time: 2022-04-17 15:47:40.265285
+(tfidfTrain.toarray()).shape : 
+(858, 861)
+对训练集进行模型评估, Start running time: 2022-04-17 15:47:44.642008
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         4
+         传染病防治失职罪       1.00      1.00      1.00         2
+          侵犯商业秘密罪       1.00      1.00      1.00        20
+          侵犯通信自由罪       1.00      1.00      1.00         2
+           信用证诈骗罪       1.00      1.00      1.00         8
+            倒卖文物罪       0.94      1.00      0.97        33
+            假冒专利罪       1.00      1.00      1.00         3
+      出具证明文件重大失实罪       0.92      1.00      0.96        11
+         出售出入境证件罪       1.00      0.90      0.95        10
+            刑讯逼供罪       1.00      1.00      1.00        10
+       利用未公开信息交易罪       1.00      0.83      0.91         6
+         劫夺被押解人员罪       1.00      1.00      1.00         8
+            医疗事故罪       0.88      1.00      0.94        15
+          危害公共安全罪       1.00      1.00      1.00         7
+            变造货币罪       1.00      1.00      1.00         4
+       吸收客户资金不入账罪       1.00      1.00      1.00         7
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        20
+            妨害清算罪       1.00      1.00      1.00         2
+       对有影响力的人行贿罪       1.00      1.00      1.00         3
+        工程重大安全事故罪       1.00      1.00      1.00        15
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         3
+          引诱幼女卖淫罪       1.00      1.00      1.00         3
+      引诱未成年人聚众淫乱罪       1.00      0.50      0.67         2
+        强令违章冒险作业罪       1.00      1.00      1.00         3
+          强迫他人吸毒罪       0.84      1.00      0.91        32
+          打击报复证人罪       1.00      1.00      1.00        26
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00        10
+          扰乱法庭秩序罪       1.00      1.00      1.00        22
+        投放虚假危险物质罪       1.00      0.85      0.92        13
+        提供虚假证明文件罪       1.00      0.95      0.97        20
+        擅自设立金融机构罪       1.00      1.00      1.00         5
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         4
+            放纵走私罪       1.00      1.00      1.00         5
+          故意损毁文物罪       1.00      0.92      0.96        13
+        故意泄露国家秘密罪       1.00      1.00      1.00        20
+      教育设施重大安全事故罪       1.00      1.00      1.00         8
+            暴力取证罪       1.00      1.00      1.00         2
+          有价证券诈骗罪       1.00      0.88      0.93         8
+              洗钱罪       1.00      1.00      1.00        15
+          消防责任事故罪       1.00      0.93      0.96        14
+          煽动分裂国家罪       1.00      1.00      1.00         3
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         2
+        煽动颠覆国家政权罪       1.00      1.00      1.00         2
+          环境监管失职罪       1.00      1.00      1.00        16
+          破坏交通工具罪       1.00      1.00      1.00        25
+            破坏军婚罪       1.00      1.00      1.00         8
+            破坏选举罪       1.00      1.00      1.00         4
+          私放在押人员罪       1.00      1.00      1.00         7
+        组织出卖人体器官罪       1.00      1.00      1.00         8
+组织未成年人进行违反治安管理活动罪       1.00      0.91      0.95        11
+            组织越狱罪       1.00      1.00      1.00         3
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         2
+            聚众淫乱罪       1.00      0.90      0.95        10
+              虐待罪       1.00      1.00      1.00        29
+          虐待被监管人罪       1.00      1.00      1.00        24
+            虚假广告罪       1.00      1.00      1.00         8
+            虚假诉讼罪       1.00      1.00      1.00        20
+          走私制毒物品罪       1.00      1.00      1.00         8
+          走私淫秽物品罪       1.00      1.00      1.00         3
+          走私贵重金属罪       1.00      1.00      1.00         9
+            过失决水罪       1.00      1.00      1.00         2
+        过失损坏交通设施罪       1.00      1.00      1.00         2
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         4
+        过失损坏电力设备罪       1.00      1.00      1.00        14
+          过失损毁文物罪       1.00      0.83      0.91         6
+            过失爆炸罪       1.00      1.00      1.00         9
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        15
+        违规出具金融票证罪       1.00      1.00      1.00         8
+          逃避追缴欠税罪       1.00      1.00      1.00         8
+          金融凭证诈骗罪       0.96      1.00      0.98        26
+         销售侵权复制品罪       1.00      1.00      1.00        13
+          阻碍军事行动罪       1.00      1.00      1.00         2
+        阻碍军人执行职务罪       1.00      1.00      1.00         3
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         3
+     非法侵入计算机信息系统罪       1.00      1.00      1.00        10
+     非法出售增值税专用发票罪       1.00      1.00      1.00        15
+        非法利用信息网络罪       1.00      1.00      1.00         4
+     非法处置进口的固体废物罪       1.00      1.00      1.00         3
+            非法搜查罪       1.00      1.00      1.00         5
+        非法经营同类营业罪       1.00      1.00      1.00         5
+          颠覆国家政权罪       1.00      1.00      1.00         2
+          食品监管渎职罪       1.00      1.00      1.00        33
+          骗取出口退税罪       1.00      1.00      1.00        26
+          骗取出境证件罪       1.00      1.00      1.00        17
+            骗购外汇罪       1.00      1.00      1.00         3
+
+         accuracy                           0.99       858
+        macro avg       0.99      0.98      0.99       858
+     weighted avg       0.99      0.99      0.99       858
+
+
+
+score: 0.986013986013986
+对训练集进行模型评估, End running time: 2022-04-17 15:47:52.527912
+Running time: 0:00:07.885904 Seconds
+对测试集进行模型评估, Start running time: 2022-04-17 15:47:52.527912
+
+对测试集进行模型评估：
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+classification_report: 
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.86      0.75      0.80         8
+           信用证诈骗罪       1.00      0.50      0.67         2
+            倒卖文物罪       0.92      0.86      0.89        14
+            假冒专利罪       0.00      0.00      0.00         0
+      出具证明文件重大失实罪       0.33      0.25      0.29         4
+         出售出入境证件罪       0.00      0.00      0.00         4
+            刑讯逼供罪       0.00      0.00      0.00         3
+       利用未公开信息交易罪       1.00      1.00      1.00         2
+         劫夺被押解人员罪       1.00      1.00      1.00         2
+            医疗事故罪       0.80      0.80      0.80         5
+          危害公共安全罪       0.33      0.50      0.40         2
+            变造货币罪       0.00      0.00      0.00         1
+       吸收客户资金不入账罪       1.00      0.50      0.67         2
+      失职致使在押人员脱逃罪       0.89      1.00      0.94         8
+        工程重大安全事故罪       0.67      1.00      0.80         6
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         1
+          引诱幼女卖淫罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         1
+          强迫他人吸毒罪       0.62      1.00      0.76        13
+          打击报复证人罪       1.00      0.50      0.67        10
+      扰乱国家机关工作秩序罪       0.67      0.67      0.67         3
+          扰乱法庭秩序罪       0.80      0.89      0.84         9
+        投放虚假危险物质罪       1.00      0.40      0.57         5
+        提供虚假证明文件罪       0.71      0.62      0.67         8
+        擅自设立金融机构罪       0.00      0.00      0.00         1
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         1
+            放纵走私罪       1.00      1.00      1.00         2
+          故意损毁文物罪       0.83      1.00      0.91         5
+        故意泄露国家秘密罪       0.80      1.00      0.89         8
+      教育设施重大安全事故罪       1.00      1.00      1.00         3
+          有价证券诈骗罪       1.00      1.00      1.00         2
+              洗钱罪       0.57      0.67      0.62         6
+          消防责任事故罪       1.00      1.00      1.00         5
+          煽动分裂国家罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00         6
+          破坏交通工具罪       0.56      0.90      0.69        10
+            破坏军婚罪       1.00      0.33      0.50         3
+            破坏选举罪       0.00      0.00      0.00         1
+          私放在押人员罪       0.50      0.50      0.50         2
+        组织出卖人体器官罪       0.00      0.00      0.00         2
+组织未成年人进行违反治安管理活动罪       0.75      0.75      0.75         4
+            组织越狱罪       0.00      0.00      0.00         0
+            聚众淫乱罪       0.40      0.67      0.50         3
+              虐待罪       0.80      1.00      0.89        12
+          虐待被监管人罪       0.75      1.00      0.86         9
+            虚假广告罪       1.00      0.50      0.67         2
+            虚假诉讼罪       1.00      0.75      0.86         8
+          走私制毒物品罪       1.00      1.00      1.00         2
+          走私淫秽物品罪       0.00      0.00      0.00         1
+          走私贵重金属罪       0.75      1.00      0.86         3
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         1
+        过失损坏电力设备罪       0.60      0.60      0.60         5
+          过失损毁文物罪       0.00      0.00      0.00         2
+            过失爆炸罪       0.50      0.67      0.57         3
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         5
+        违规出具金融票证罪       1.00      1.00      1.00         2
+          逃避追缴欠税罪       0.67      1.00      0.80         2
+          金融凭证诈骗罪       1.00      0.60      0.75        10
+         销售侵权复制品罪       0.80      0.80      0.80         5
+        阻碍军人执行职务罪       0.00      0.00      0.00         1
+   非法低价出让国有土地使用权罪       0.50      1.00      0.67         1
+     非法侵入计算机信息系统罪       1.00      0.33      0.50         3
+     非法出售增值税专用发票罪       0.83      1.00      0.91         5
+        非法利用信息网络罪       0.50      1.00      0.67         1
+     非法处置进口的固体废物罪       1.00      1.00      1.00         1
+            非法搜查罪       1.00      1.00      1.00         1
+        非法经营同类营业罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.96        14
+          骗取出口退税罪       1.00      1.00      1.00        11
+          骗取出境证件罪       0.70      1.00      0.82         7
+
+         accuracy                           0.78       298
+        macro avg       0.64      0.64      0.62       298
+     weighted avg       0.77      0.78      0.75       298
+
+
+
+score: 0.7751677852348994
+对测试集进行模型评估, End running time: 2022-04-17 15:47:55.136945
+Running time: 0:00:02.609033 Seconds
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+rogramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-17 19:16:37.348961
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.761 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 19:16:43.041767
+cv=2的分数为:  [0.72318339 0.71626298]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([1.83304405, 1.68453026]), 'score_time': array([1.60675454, 1.65154433]), 'test_precision_macro': array([0.50568345, 0.54669263]), 'train_precision_macro': array([0.9787111 , 0.99481046]), 'test_recall_macro': array([0.48307293, 0.53499504]), 'train_recall_macro': array([0.97028945, 0.98356676]), 'test_f1_macro': array([0.47114006, 0.51232274]), 'train_f1_macro': array([0.97152613, 0.98741755])}
+getCVResult() End running time: 2022-04-17 19:17:00.115057
+Running time: 0:00:17.073290 Seconds
+getPreResult() Start running time: 2022-04-17 19:17:04.929175
+(tfidfTrain.toarray()).shape : 
+(773, 857)
+对训练集进行模型评估, Start running time: 2022-04-17 19:17:07.821486
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         3
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       1.00      1.00      1.00        19
+          侵犯通信自由罪       1.00      1.00      1.00         1
+           信用证诈骗罪       1.00      1.00      1.00         7
+            倒卖文物罪       0.91      1.00      0.96        32
+            假冒专利罪       1.00      1.00      1.00         2
+      出具证明文件重大失实罪       0.91      1.00      0.95        10
+         出售出入境证件罪       1.00      1.00      1.00         9
+            刑讯逼供罪       1.00      1.00      1.00         9
+       利用未公开信息交易罪       0.83      1.00      0.91         5
+         劫夺被押解人员罪       1.00      1.00      1.00         7
+            医疗事故罪       1.00      1.00      1.00        14
+          危害公共安全罪       1.00      1.00      1.00         6
+            变造货币罪       1.00      1.00      1.00         3
+       吸收客户资金不入账罪       1.00      1.00      1.00         6
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        19
+            妨害清算罪       1.00      1.00      1.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         2
+        工程重大安全事故罪       1.00      1.00      1.00        14
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         2
+          引诱幼女卖淫罪       1.00      1.00      1.00         2
+      引诱未成年人聚众淫乱罪       1.00      1.00      1.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       0.97      1.00      0.98        31
+          打击报复证人罪       1.00      1.00      1.00        25
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00         9
+          扰乱法庭秩序罪       1.00      1.00      1.00        21
+        投放虚假危险物质罪       0.92      0.92      0.92        12
+        提供虚假证明文件罪       1.00      0.95      0.97        19
+        擅自设立金融机构罪       1.00      1.00      1.00         4
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         3
+            放纵走私罪       1.00      1.00      1.00         4
+          故意损毁文物罪       1.00      0.92      0.96        12
+        故意泄露国家秘密罪       1.00      1.00      1.00        19
+      教育设施重大安全事故罪       1.00      1.00      1.00         7
+            暴力取证罪       1.00      1.00      1.00         1
+          有价证券诈骗罪       1.00      0.86      0.92         7
+              洗钱罪       1.00      1.00      1.00        14
+          消防责任事故罪       1.00      0.92      0.96        13
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         1
+        煽动颠覆国家政权罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00        15
+          破坏交通工具罪       1.00      1.00      1.00        24
+            破坏军婚罪       1.00      1.00      1.00         7
+            破坏选举罪       1.00      1.00      1.00         3
+          私放在押人员罪       1.00      1.00      1.00         6
+        组织出卖人体器官罪       1.00      1.00      1.00         7
+组织未成年人进行违反治安管理活动罪       1.00      1.00      1.00        10
+            组织越狱罪       1.00      1.00      1.00         2
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       1.00      0.89      0.94         9
+              虐待罪       1.00      1.00      1.00        28
+          虐待被监管人罪       1.00      1.00      1.00        23
+            虚假广告罪       1.00      1.00      1.00         7
+            虚假诉讼罪       1.00      1.00      1.00        19
+          走私制毒物品罪       1.00      1.00      1.00         7
+          走私淫秽物品罪       1.00      1.00      1.00         2
+          走私贵重金属罪       1.00      1.00      1.00         8
+            过失决水罪       1.00      1.00      1.00         1
+        过失损坏交通设施罪       1.00      1.00      1.00         1
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         3
+        过失损坏电力设备罪       1.00      1.00      1.00        13
+          过失损毁文物罪       1.00      0.60      0.75         5
+            过失爆炸罪       1.00      1.00      1.00         8
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        14
+        违规出具金融票证罪       1.00      1.00      1.00         7
+          逃避追缴欠税罪       1.00      1.00      1.00         7
+          金融凭证诈骗罪       0.96      1.00      0.98        25
+         销售侵权复制品罪       1.00      1.00      1.00        12
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       1.00      1.00      1.00         2
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         9
+     非法出售增值税专用发票罪       1.00      1.00      1.00        14
+        非法利用信息网络罪       1.00      1.00      1.00         3
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      1.00      1.00         4
+        非法经营同类营业罪       1.00      1.00      1.00         4
+          颠覆国家政权罪       1.00      1.00      1.00         1
+          食品监管渎职罪       1.00      1.00      1.00        32
+          骗取出口退税罪       1.00      1.00      1.00        25
+          骗取出境证件罪       1.00      1.00      1.00        16
+            骗购外汇罪       1.00      1.00      1.00         2
+
+         accuracy                           0.99       773
+        macro avg       0.99      0.99      0.99       773
+     weighted avg       0.99      0.99      0.99       773
+
+
+
+score: 0.9896507115135834
+对训练集进行模型评估, End running time: 2022-04-17 19:17:12.660493
+Running time: 0:00:04.839007 Seconds
+对测试集进行模型评估, Start running time: 2022-04-17 19:17:12.660493
+
+对测试集进行模型评估：
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       0.00      0.00      0.00         2
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.57      0.89      0.70         9
+          侵犯通信自由罪       0.00      0.00      0.00         1
+           信用证诈骗罪       0.67      0.67      0.67         3
+            倒卖文物罪       0.93      0.87      0.90        15
+            假冒专利罪       0.00      0.00      0.00         1
+      出具证明文件重大失实罪       0.33      0.20      0.25         5
+         出售出入境证件罪       0.00      0.00      0.00         5
+            刑讯逼供罪       0.00      0.00      0.00         4
+       利用未公开信息交易罪       0.23      1.00      0.38         3
+         劫夺被押解人员罪       0.75      1.00      0.86         3
+            医疗事故罪       1.00      0.83      0.91         6
+          危害公共安全罪       0.50      0.33      0.40         3
+            变造货币罪       0.00      0.00      0.00         2
+       吸收客户资金不入账罪       1.00      0.67      0.80         3
+      失职致使在押人员脱逃罪       0.75      1.00      0.86         9
+            妨害清算罪       0.00      0.00      0.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         1
+        工程重大安全事故罪       0.64      1.00      0.78         7
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         2
+          引诱幼女卖淫罪       0.00      0.00      0.00         2
+      引诱未成年人聚众淫乱罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       0.50      0.50      0.50         2
+          强迫他人吸毒罪       0.82      1.00      0.90        14
+          打击报复证人罪       0.60      0.55      0.57        11
+      扰乱国家机关工作秩序罪       0.50      0.75      0.60         4
+          扰乱法庭秩序罪       0.75      0.90      0.82        10
+        投放虚假危险物质罪       1.00      0.33      0.50         6
+        提供虚假证明文件罪       0.58      0.78      0.67         9
+        擅自设立金融机构罪       1.00      0.50      0.67         2
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         2
+            放纵走私罪       0.60      1.00      0.75         3
+          故意损毁文物罪       0.83      0.83      0.83         6
+        故意泄露国家秘密罪       0.82      1.00      0.90         9
+      教育设施重大安全事故罪       0.60      0.75      0.67         4
+            暴力取证罪       0.00      0.00      0.00         1
+          有价证券诈骗罪       1.00      0.33      0.50         3
+              洗钱罪       0.71      0.71      0.71         7
+          消防责任事故罪       0.86      1.00      0.92         6
+          煽动分裂国家罪       0.67      1.00      0.80         2
+      煽动暴力抗拒法律实施罪       0.00      0.00      0.00         1
+        煽动颠覆国家政权罪       0.00      0.00      0.00         1
+          环境监管失职罪       0.78      1.00      0.88         7
+          破坏交通工具罪       0.62      0.91      0.74        11
+            破坏军婚罪       1.00      0.25      0.40         4
+            破坏选举罪       1.00      0.50      0.67         2
+          私放在押人员罪       0.50      0.33      0.40         3
+        组织出卖人体器官罪       0.00      0.00      0.00         3
+组织未成年人进行违反治安管理活动罪       0.60      0.60      0.60         5
+            组织越狱罪       1.00      1.00      1.00         1
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       0.43      0.75      0.55         4
+              虐待罪       0.65      1.00      0.79        13
+          虐待被监管人罪       0.77      1.00      0.87        10
+            虚假广告罪       1.00      0.67      0.80         3
+            虚假诉讼罪       0.78      0.78      0.78         9
+          走私制毒物品罪       1.00      0.67      0.80         3
+          走私淫秽物品罪       0.00      0.00      0.00         2
+          走私贵重金属罪       1.00      1.00      1.00         4
+            过失决水罪       0.00      0.00      0.00         1
+        过失损坏交通设施罪       0.00      0.00      0.00         1
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         2
+        过失损坏电力设备罪       0.62      0.83      0.71         6
+          过失损毁文物罪       0.00      0.00      0.00         3
+            过失爆炸罪       1.00      0.75      0.86         4
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         6
+        违规出具金融票证罪       1.00      0.67      0.80         3
+          逃避追缴欠税罪       0.75      1.00      0.86         3
+          金融凭证诈骗罪       0.78      0.64      0.70        11
+         销售侵权复制品罪       1.00      0.67      0.80         6
+          阻碍军事行动罪       0.00      0.00      0.00         1
+        阻碍军人执行职务罪       0.00      0.00      0.00         2
+   非法低价出让国有土地使用权罪       0.00      0.00      0.00         2
+     非法侵入计算机信息系统罪       0.67      0.50      0.57         4
+     非法出售增值税专用发票罪       0.86      1.00      0.92         6
+        非法利用信息网络罪       0.50      1.00      0.67         2
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      0.50      0.67         2
+        非法经营同类营业罪       0.00      0.00      0.00         2
+          颠覆国家政权罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.97        15
+          骗取出口退税罪       1.00      1.00      1.00        12
+          骗取出境证件罪       0.70      0.88      0.78         8
+            骗购外汇罪       0.00      0.00      0.00         1
+
+         accuracy                           0.72       383
+        macro avg       0.54      0.54      0.52       383
+     weighted avg       0.68      0.72      0.68       383
+
+
+
+score: 0.7180156657963447
+对测试集进行模型评估, End running time: 2022-04-17 19:17:15.110935
+Running time: 0:00:02.450442 Seconds
+
+"""
+
+
+去除,min_df=0.02：
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-17 21:03:12.545073
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.754 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 21:03:17.728208
+cv=2的分数为:  [0.79757785 0.77854671]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([8.58303738, 8.7645967 ]), 'score_time': array([8.75258613, 9.30605912]), 'test_precision_macro': array([0.64639929, 0.64934281]), 'train_precision_macro': array([0.99852941, 1.        ]), 'test_recall_macro': array([0.60268806, 0.6141609 ]), 'train_recall_macro': array([0.99869281, 1.        ]), 'test_f1_macro': array([0.60265979, 0.61036682]), 'train_f1_macro': array([0.99852364, 1.        ])}
+getCVResult() End running time: 2022-04-17 21:04:47.144992
+Running time: 0:01:29.416784 Seconds
+getPreResult() Start running time: 2022-04-17 21:04:51.847410
+(tfidfTrain.toarray()).shape : 
+(773, 20330)
+对训练集进行模型评估, Start running time: 2022-04-17 21:05:04.662127
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         3
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       1.00      1.00      1.00        19
+          侵犯通信自由罪       1.00      1.00      1.00         1
+           信用证诈骗罪       1.00      1.00      1.00         7
+            倒卖文物罪       1.00      1.00      1.00        32
+            假冒专利罪       1.00      1.00      1.00         2
+      出具证明文件重大失实罪       1.00      1.00      1.00        10
+         出售出入境证件罪       1.00      1.00      1.00         9
+            刑讯逼供罪       1.00      1.00      1.00         9
+       利用未公开信息交易罪       1.00      1.00      1.00         5
+         劫夺被押解人员罪       1.00      1.00      1.00         7
+            医疗事故罪       1.00      1.00      1.00        14
+          危害公共安全罪       1.00      1.00      1.00         6
+            变造货币罪       1.00      1.00      1.00         3
+       吸收客户资金不入账罪       1.00      1.00      1.00         6
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        19
+            妨害清算罪       1.00      1.00      1.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         2
+        工程重大安全事故罪       1.00      1.00      1.00        14
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         2
+          引诱幼女卖淫罪       1.00      1.00      1.00         2
+      引诱未成年人聚众淫乱罪       1.00      1.00      1.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       1.00      1.00      1.00        31
+          打击报复证人罪       1.00      1.00      1.00        25
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00         9
+          扰乱法庭秩序罪       1.00      1.00      1.00        21
+        投放虚假危险物质罪       1.00      1.00      1.00        12
+        提供虚假证明文件罪       1.00      1.00      1.00        19
+        擅自设立金融机构罪       1.00      1.00      1.00         4
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         3
+            放纵走私罪       1.00      1.00      1.00         4
+          故意损毁文物罪       1.00      1.00      1.00        12
+        故意泄露国家秘密罪       1.00      1.00      1.00        19
+      教育设施重大安全事故罪       1.00      1.00      1.00         7
+            暴力取证罪       1.00      1.00      1.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         7
+              洗钱罪       1.00      1.00      1.00        14
+          消防责任事故罪       1.00      1.00      1.00        13
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         1
+        煽动颠覆国家政权罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00        15
+          破坏交通工具罪       1.00      1.00      1.00        24
+            破坏军婚罪       1.00      1.00      1.00         7
+            破坏选举罪       1.00      1.00      1.00         3
+          私放在押人员罪       1.00      1.00      1.00         6
+        组织出卖人体器官罪       1.00      1.00      1.00         7
+组织未成年人进行违反治安管理活动罪       1.00      1.00      1.00        10
+            组织越狱罪       1.00      1.00      1.00         2
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       1.00      1.00      1.00         9
+              虐待罪       1.00      1.00      1.00        28
+          虐待被监管人罪       1.00      1.00      1.00        23
+            虚假广告罪       1.00      1.00      1.00         7
+            虚假诉讼罪       1.00      1.00      1.00        19
+          走私制毒物品罪       1.00      1.00      1.00         7
+          走私淫秽物品罪       1.00      1.00      1.00         2
+          走私贵重金属罪       1.00      1.00      1.00         8
+            过失决水罪       1.00      1.00      1.00         1
+        过失损坏交通设施罪       1.00      1.00      1.00         1
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         3
+        过失损坏电力设备罪       1.00      1.00      1.00        13
+          过失损毁文物罪       1.00      1.00      1.00         5
+            过失爆炸罪       1.00      1.00      1.00         8
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        14
+        违规出具金融票证罪       1.00      1.00      1.00         7
+          逃避追缴欠税罪       1.00      1.00      1.00         7
+          金融凭证诈骗罪       1.00      1.00      1.00        25
+         销售侵权复制品罪       1.00      1.00      1.00        12
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       1.00      1.00      1.00         2
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         9
+     非法出售增值税专用发票罪       1.00      1.00      1.00        14
+        非法利用信息网络罪       1.00      1.00      1.00         3
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      1.00      1.00         4
+        非法经营同类营业罪       1.00      1.00      1.00         4
+          颠覆国家政权罪       1.00      1.00      1.00         1
+          食品监管渎职罪       1.00      1.00      1.00        32
+          骗取出口退税罪       1.00      1.00      1.00        25
+          骗取出境证件罪       1.00      1.00      1.00        16
+            骗购外汇罪       1.00      1.00      1.00         2
+
+         accuracy                           1.00       773
+        macro avg       1.00      1.00      1.00       773
+     weighted avg       1.00      1.00      1.00       773
+
+
+
+score: 1.0
+对训练集进行模型评估, End running time: 2022-04-17 21:05:28.286972
+Running time: 0:00:23.624845 Seconds
+对测试集进行模型评估, Start running time: 2022-04-17 21:05:28.286972
+
+对测试集进行模型评估：
+classification_report: 
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       0.00      0.00      0.00         2
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.57      0.89      0.70         9
+          侵犯通信自由罪       0.00      0.00      0.00         1
+           信用证诈骗罪       0.00      0.00      0.00         3
+            倒卖文物罪       0.93      0.87      0.90        15
+            假冒专利罪       1.00      1.00      1.00         1
+      出具证明文件重大失实罪       0.40      0.40      0.40         5
+         出售出入境证件罪       1.00      0.20      0.33         5
+            刑讯逼供罪       1.00      0.75      0.86         4
+       利用未公开信息交易罪       1.00      1.00      1.00         3
+         劫夺被押解人员罪       1.00      1.00      1.00         3
+            医疗事故罪       1.00      1.00      1.00         6
+          危害公共安全罪       0.00      0.00      0.00         3
+            变造货币罪       1.00      1.00      1.00         2
+       吸收客户资金不入账罪       1.00      0.67      0.80         3
+      失职致使在押人员脱逃罪       0.82      1.00      0.90         9
+            妨害清算罪       0.00      0.00      0.00         1
+       对有影响力的人行贿罪       0.00      0.00      0.00         1
+        工程重大安全事故罪       0.70      1.00      0.82         7
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         2
+          引诱幼女卖淫罪       1.00      0.50      0.67         2
+      引诱未成年人聚众淫乱罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       0.70      1.00      0.82        14
+          打击报复证人罪       0.67      0.73      0.70        11
+      扰乱国家机关工作秩序罪       0.67      1.00      0.80         4
+          扰乱法庭秩序罪       0.91      1.00      0.95        10
+        投放虚假危险物质罪       0.31      0.67      0.42         6
+        提供虚假证明文件罪       0.67      0.44      0.53         9
+        擅自设立金融机构罪       1.00      0.50      0.67         2
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         2
+            放纵走私罪       1.00      0.67      0.80         3
+          故意损毁文物罪       0.71      0.83      0.77         6
+        故意泄露国家秘密罪       0.82      1.00      0.90         9
+      教育设施重大安全事故罪       0.75      0.75      0.75         4
+            暴力取证罪       0.00      0.00      0.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         3
+              洗钱罪       0.83      0.71      0.77         7
+          消防责任事故罪       0.75      1.00      0.86         6
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       0.00      0.00      0.00         1
+        煽动颠覆国家政权罪       0.00      0.00      0.00         1
+          环境监管失职罪       0.78      1.00      0.88         7
+          破坏交通工具罪       0.67      0.91      0.77        11
+            破坏军婚罪       1.00      0.75      0.86         4
+            破坏选举罪       1.00      1.00      1.00         2
+          私放在押人员罪       0.00      0.00      0.00         3
+        组织出卖人体器官罪       1.00      1.00      1.00         3
+组织未成年人进行违反治安管理活动罪       0.67      0.40      0.50         5
+            组织越狱罪       1.00      1.00      1.00         1
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       0.67      1.00      0.80         4
+              虐待罪       0.81      1.00      0.90        13
+          虐待被监管人罪       0.77      1.00      0.87        10
+            虚假广告罪       1.00      1.00      1.00         3
+            虚假诉讼罪       0.78      0.78      0.78         9
+          走私制毒物品罪       1.00      0.67      0.80         3
+          走私淫秽物品罪       0.00      0.00      0.00         2
+          走私贵重金属罪       0.80      1.00      0.89         4
+            过失决水罪       0.00      0.00      0.00         1
+        过失损坏交通设施罪       0.00      0.00      0.00         1
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         2
+        过失损坏电力设备罪       0.75      1.00      0.86         6
+          过失损毁文物罪       0.00      0.00      0.00         3
+            过失爆炸罪       1.00      1.00      1.00         4
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         6
+        违规出具金融票证罪       1.00      1.00      1.00         3
+          逃避追缴欠税罪       1.00      0.67      0.80         3
+          金融凭证诈骗罪       0.62      0.73      0.67        11
+         销售侵权复制品罪       1.00      1.00      1.00         6
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       0.00      0.00      0.00         2
+   非法低价出让国有土地使用权罪       0.67      1.00      0.80         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         4
+     非法出售增值税专用发票罪       0.86      1.00      0.92         6
+        非法利用信息网络罪       0.50      1.00      0.67         2
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       0.00      0.00      0.00         2
+        非法经营同类营业罪       0.00      0.00      0.00         2
+          颠覆国家政权罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.97        15
+          骗取出口退税罪       0.92      1.00      0.96        12
+          骗取出境证件罪       0.70      0.88      0.78         8
+            骗购外汇罪       1.00      1.00      1.00         1
+
+         accuracy                           0.79       383
+        macro avg       0.64      0.65      0.63       383
+     weighted avg       0.74      0.79      0.75       383
+
+
+
+score: 0.7885117493472585
+对测试集进行模型评估, End running time: 2022-04-17 21:05:39.521868
+Running time: 0:00:11.234896 Seconds
+
+"""
+
+
+
+
+添加max_df = 0.8 之后:
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-17 21:10:42.228451
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.719 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 21:10:47.531229
+cv=2的分数为:  [0.79930796 0.77854671]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([8.69975877, 8.11126709]), 'score_time': array([8.56006432, 8.61096334]), 'test_precision_macro': array([0.64467387, 0.64969984]), 'train_precision_macro': array([0.99852941, 1.        ]), 'test_recall_macro': array([0.60334165, 0.6141609 ]), 'train_recall_macro': array([0.99869281, 1.        ]), 'test_f1_macro': array([0.60277002, 0.61056989]), 'train_f1_macro': array([0.99852364, 1.        ])}
+getCVResult() End running time: 2022-04-17 21:12:13.354628
+Running time: 0:01:25.823399 Seconds
+getPreResult() Start running time: 2022-04-17 21:12:17.890492
+(tfidfTrain.toarray()).shape : 
+(773, 20329)
+对训练集进行模型评估, Start running time: 2022-04-17 21:12:29.810603
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         3
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       1.00      1.00      1.00        19
+          侵犯通信自由罪       1.00      1.00      1.00         1
+           信用证诈骗罪       1.00      1.00      1.00         7
+            倒卖文物罪       1.00      1.00      1.00        32
+            假冒专利罪       1.00      1.00      1.00         2
+      出具证明文件重大失实罪       1.00      1.00      1.00        10
+         出售出入境证件罪       1.00      1.00      1.00         9
+            刑讯逼供罪       1.00      1.00      1.00         9
+       利用未公开信息交易罪       1.00      1.00      1.00         5
+         劫夺被押解人员罪       1.00      1.00      1.00         7
+            医疗事故罪       1.00      1.00      1.00        14
+          危害公共安全罪       1.00      1.00      1.00         6
+            变造货币罪       1.00      1.00      1.00         3
+       吸收客户资金不入账罪       1.00      1.00      1.00         6
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        19
+            妨害清算罪       1.00      1.00      1.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         2
+        工程重大安全事故罪       1.00      1.00      1.00        14
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         2
+          引诱幼女卖淫罪       1.00      1.00      1.00         2
+      引诱未成年人聚众淫乱罪       1.00      1.00      1.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       1.00      1.00      1.00        31
+          打击报复证人罪       1.00      1.00      1.00        25
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00         9
+          扰乱法庭秩序罪       1.00      1.00      1.00        21
+        投放虚假危险物质罪       1.00      1.00      1.00        12
+        提供虚假证明文件罪       1.00      1.00      1.00        19
+        擅自设立金融机构罪       1.00      1.00      1.00         4
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         3
+            放纵走私罪       1.00      1.00      1.00         4
+          故意损毁文物罪       1.00      1.00      1.00        12
+        故意泄露国家秘密罪       1.00      1.00      1.00        19
+      教育设施重大安全事故罪       1.00      1.00      1.00         7
+            暴力取证罪       1.00      1.00      1.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         7
+              洗钱罪       1.00      1.00      1.00        14
+          消防责任事故罪       1.00      1.00      1.00        13
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         1
+        煽动颠覆国家政权罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00        15
+          破坏交通工具罪       1.00      1.00      1.00        24
+            破坏军婚罪       1.00      1.00      1.00         7
+            破坏选举罪       1.00      1.00      1.00         3
+          私放在押人员罪       1.00      1.00      1.00         6
+        组织出卖人体器官罪       1.00      1.00      1.00         7
+组织未成年人进行违反治安管理活动罪       1.00      1.00      1.00        10
+            组织越狱罪       1.00      1.00      1.00         2
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       1.00      1.00      1.00         9
+              虐待罪       1.00      1.00      1.00        28
+          虐待被监管人罪       1.00      1.00      1.00        23
+            虚假广告罪       1.00      1.00      1.00         7
+            虚假诉讼罪       1.00      1.00      1.00        19
+          走私制毒物品罪       1.00      1.00      1.00         7
+          走私淫秽物品罪       1.00      1.00      1.00         2
+          走私贵重金属罪       1.00      1.00      1.00         8
+            过失决水罪       1.00      1.00      1.00         1
+        过失损坏交通设施罪       1.00      1.00      1.00         1
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         3
+        过失损坏电力设备罪       1.00      1.00      1.00        13
+          过失损毁文物罪       1.00      1.00      1.00         5
+            过失爆炸罪       1.00      1.00      1.00         8
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        14
+        违规出具金融票证罪       1.00      1.00      1.00         7
+          逃避追缴欠税罪       1.00      1.00      1.00         7
+          金融凭证诈骗罪       1.00      1.00      1.00        25
+         销售侵权复制品罪       1.00      1.00      1.00        12
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       1.00      1.00      1.00         2
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         9
+     非法出售增值税专用发票罪       1.00      1.00      1.00        14
+        非法利用信息网络罪       1.00      1.00      1.00         3
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      1.00      1.00         4
+        非法经营同类营业罪       1.00      1.00      1.00         4
+          颠覆国家政权罪       1.00      1.00      1.00         1
+          食品监管渎职罪       1.00      1.00      1.00        32
+          骗取出口退税罪       1.00      1.00      1.00        25
+          骗取出境证件罪       1.00      1.00      1.00        16
+            骗购外汇罪       1.00      1.00      1.00         2
+
+         accuracy                           1.00       773
+        macro avg       1.00      1.00      1.00       773
+     weighted avg       1.00      1.00      1.00       773
+
+
+
+score: 1.0
+对训练集进行模型评估, End running time: 2022-04-17 21:12:53.043703
+Running time: 0:00:23.233100 Seconds
+对测试集进行模型评估, Start running time: 2022-04-17 21:12:53.043703
+
+对测试集进行模型评估：
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       0.00      0.00      0.00         2
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.57      0.89      0.70         9
+          侵犯通信自由罪       0.00      0.00      0.00         1
+           信用证诈骗罪       0.00      0.00      0.00         3
+            倒卖文物罪       0.93      0.87      0.90        15
+            假冒专利罪       1.00      1.00      1.00         1
+      出具证明文件重大失实罪       0.40      0.40      0.40         5
+         出售出入境证件罪       1.00      0.20      0.33         5
+            刑讯逼供罪       1.00      0.75      0.86         4
+       利用未公开信息交易罪       1.00      1.00      1.00         3
+         劫夺被押解人员罪       1.00      1.00      1.00         3
+            医疗事故罪       1.00      1.00      1.00         6
+          危害公共安全罪       0.00      0.00      0.00         3
+            变造货币罪       1.00      1.00      1.00         2
+       吸收客户资金不入账罪       1.00      0.67      0.80         3
+      失职致使在押人员脱逃罪       0.82      1.00      0.90         9
+            妨害清算罪       0.00      0.00      0.00         1
+       对有影响力的人行贿罪       0.00      0.00      0.00         1
+        工程重大安全事故罪       0.70      1.00      0.82         7
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         2
+          引诱幼女卖淫罪       1.00      0.50      0.67         2
+      引诱未成年人聚众淫乱罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       1.00      0.50      0.67         2
+          强迫他人吸毒罪       0.70      1.00      0.82        14
+          打击报复证人罪       0.67      0.73      0.70        11
+      扰乱国家机关工作秩序罪       0.67      1.00      0.80         4
+          扰乱法庭秩序罪       0.91      1.00      0.95        10
+        投放虚假危险物质罪       0.31      0.67      0.42         6
+        提供虚假证明文件罪       0.67      0.44      0.53         9
+        擅自设立金融机构罪       1.00      0.50      0.67         2
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         2
+            放纵走私罪       1.00      0.67      0.80         3
+          故意损毁文物罪       0.71      0.83      0.77         6
+        故意泄露国家秘密罪       0.90      1.00      0.95         9
+      教育设施重大安全事故罪       0.75      0.75      0.75         4
+            暴力取证罪       0.00      0.00      0.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         3
+              洗钱罪       0.83      0.71      0.77         7
+          消防责任事故罪       0.75      1.00      0.86         6
+          煽动分裂国家罪       0.67      1.00      0.80         2
+      煽动暴力抗拒法律实施罪       0.00      0.00      0.00         1
+        煽动颠覆国家政权罪       0.00      0.00      0.00         1
+          环境监管失职罪       0.78      1.00      0.88         7
+          破坏交通工具罪       0.67      0.91      0.77        11
+            破坏军婚罪       1.00      0.75      0.86         4
+            破坏选举罪       1.00      1.00      1.00         2
+          私放在押人员罪       0.00      0.00      0.00         3
+        组织出卖人体器官罪       1.00      1.00      1.00         3
+组织未成年人进行违反治安管理活动罪       0.67      0.40      0.50         5
+            组织越狱罪       1.00      1.00      1.00         1
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       0.67      1.00      0.80         4
+              虐待罪       0.81      1.00      0.90        13
+          虐待被监管人罪       0.77      1.00      0.87        10
+            虚假广告罪       1.00      1.00      1.00         3
+            虚假诉讼罪       0.78      0.78      0.78         9
+          走私制毒物品罪       1.00      0.67      0.80         3
+          走私淫秽物品罪       0.00      0.00      0.00         2
+          走私贵重金属罪       0.80      1.00      0.89         4
+            过失决水罪       0.00      0.00      0.00         1
+        过失损坏交通设施罪       0.00      0.00      0.00         1
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         2
+        过失损坏电力设备罪       0.75      1.00      0.86         6
+          过失损毁文物罪       0.00      0.00      0.00         3
+            过失爆炸罪       0.80      1.00      0.89         4
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         6
+        违规出具金融票证罪       1.00      1.00      1.00         3
+          逃避追缴欠税罪       1.00      0.67      0.80         3
+          金融凭证诈骗罪       0.62      0.73      0.67        11
+         销售侵权复制品罪       1.00      1.00      1.00         6
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       0.00      0.00      0.00         2
+   非法低价出让国有土地使用权罪       0.67      1.00      0.80         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         4
+     非法出售增值税专用发票罪       0.86      1.00      0.92         6
+        非法利用信息网络罪       0.50      1.00      0.67         2
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       0.00      0.00      0.00         2
+        非法经营同类营业罪       0.00      0.00      0.00         2
+          颠覆国家政权罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.97        15
+          骗取出口退税罪       0.92      1.00      0.96        12
+          骗取出境证件罪       0.70      0.88      0.78         8
+            骗购外汇罪       1.00      1.00      1.00         1
+
+         accuracy                           0.79       383
+        macro avg       0.63      0.64      0.62       383
+     weighted avg       0.73      0.79      0.74       383
+
+
+
+score: 0.7859007832898173
+对测试集进行模型评估, End running time: 2022-04-17 21:13:04.179912
+Running time: 0:00:11.136209 Seconds
+getPreResult() End running time: 2022-04-17 21:13:04.183901
+Running time: 0:00:46.293409 Seconds
+End running time: 2022-04-17 21:13:04.183901
+Running time: 0:02:21.955450 Seconds
+
+Process finished with exit code 0
+
+
+"""
+
+
+
+
+max_df = 0.5的结果：
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Start running time: 2022-04-17 21:20:50.318176
+Loading model cost 0.755 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 21:20:55.783520
+cv=2的分数为:  [0.79930796 0.77508651]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([8.13819361, 7.71535873]), 'score_time': array([8.1372292 , 8.24593925]), 'test_precision_macro': array([0.64661091, 0.64665281]), 'train_precision_macro': array([0.99852941, 1.        ]), 'test_recall_macro': array([0.60436873, 0.61285371]), 'train_recall_macro': array([0.99869281, 1.        ]), 'test_f1_macro': array([0.60429843, 0.60878783]), 'train_f1_macro': array([0.99852364, 1.        ])}
+getCVResult() End running time: 2022-04-17 21:22:17.437073
+Running time: 0:01:21.653553 Seconds
+getPreResult() Start running time: 2022-04-17 21:22:22.317018
+(tfidfTrain.toarray()).shape : 
+(773, 20321)
+对训练集进行模型评估, Start running time: 2022-04-17 21:22:33.995773
+对训练集进行模型评估：
+classification_report: 
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       1.00      1.00      1.00         3
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       1.00      1.00      1.00        19
+          侵犯通信自由罪       1.00      1.00      1.00         1
+           信用证诈骗罪       1.00      1.00      1.00         7
+            倒卖文物罪       1.00      1.00      1.00        32
+            假冒专利罪       1.00      1.00      1.00         2
+      出具证明文件重大失实罪       1.00      1.00      1.00        10
+         出售出入境证件罪       1.00      1.00      1.00         9
+            刑讯逼供罪       1.00      1.00      1.00         9
+       利用未公开信息交易罪       1.00      1.00      1.00         5
+         劫夺被押解人员罪       1.00      1.00      1.00         7
+            医疗事故罪       1.00      1.00      1.00        14
+          危害公共安全罪       1.00      1.00      1.00         6
+            变造货币罪       1.00      1.00      1.00         3
+       吸收客户资金不入账罪       1.00      1.00      1.00         6
+      失职致使在押人员脱逃罪       1.00      1.00      1.00        19
+            妨害清算罪       1.00      1.00      1.00         1
+       对有影响力的人行贿罪       1.00      1.00      1.00         2
+        工程重大安全事故罪       1.00      1.00      1.00        14
+      帮助信息网络犯罪活动罪       1.00      1.00      1.00         2
+          引诱幼女卖淫罪       1.00      1.00      1.00         2
+      引诱未成年人聚众淫乱罪       1.00      1.00      1.00         1
+        强令违章冒险作业罪       1.00      1.00      1.00         2
+          强迫他人吸毒罪       1.00      1.00      1.00        31
+          打击报复证人罪       1.00      1.00      1.00        25
+      扰乱国家机关工作秩序罪       1.00      1.00      1.00         9
+          扰乱法庭秩序罪       1.00      1.00      1.00        21
+        投放虚假危险物质罪       1.00      1.00      1.00        12
+        提供虚假证明文件罪       1.00      1.00      1.00        19
+        擅自设立金融机构罪       1.00      1.00      1.00         4
+    放纵制售伪劣商品犯罪行为罪       1.00      1.00      1.00         3
+            放纵走私罪       1.00      1.00      1.00         4
+          故意损毁文物罪       1.00      1.00      1.00        12
+        故意泄露国家秘密罪       1.00      1.00      1.00        19
+      教育设施重大安全事故罪       1.00      1.00      1.00         7
+            暴力取证罪       1.00      1.00      1.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         7
+              洗钱罪       1.00      1.00      1.00        14
+          消防责任事故罪       1.00      1.00      1.00        13
+          煽动分裂国家罪       1.00      1.00      1.00         2
+      煽动暴力抗拒法律实施罪       1.00      1.00      1.00         1
+        煽动颠覆国家政权罪       1.00      1.00      1.00         1
+          环境监管失职罪       1.00      1.00      1.00        15
+          破坏交通工具罪       1.00      1.00      1.00        24
+            破坏军婚罪       1.00      1.00      1.00         7
+            破坏选举罪       1.00      1.00      1.00         3
+          私放在押人员罪       1.00      1.00      1.00         6
+        组织出卖人体器官罪       1.00      1.00      1.00         7
+组织未成年人进行违反治安管理活动罪       1.00      1.00      1.00        10
+            组织越狱罪       1.00      1.00      1.00         2
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       1.00      1.00      1.00         9
+              虐待罪       1.00      1.00      1.00        28
+          虐待被监管人罪       1.00      1.00      1.00        23
+            虚假广告罪       1.00      1.00      1.00         7
+            虚假诉讼罪       1.00      1.00      1.00        19
+          走私制毒物品罪       1.00      1.00      1.00         7
+          走私淫秽物品罪       1.00      1.00      1.00         2
+          走私贵重金属罪       1.00      1.00      1.00         8
+            过失决水罪       1.00      1.00      1.00         1
+        过失损坏交通设施罪       1.00      1.00      1.00         1
+      过失损坏易燃易爆设备罪       1.00      1.00      1.00         3
+        过失损坏电力设备罪       1.00      1.00      1.00        13
+          过失损毁文物罪       1.00      1.00      1.00         5
+            过失爆炸罪       1.00      1.00      1.00         8
+     违法发放林木采伐许可证罪       1.00      1.00      1.00        14
+        违规出具金融票证罪       1.00      1.00      1.00         7
+          逃避追缴欠税罪       1.00      1.00      1.00         7
+          金融凭证诈骗罪       1.00      1.00      1.00        25
+         销售侵权复制品罪       1.00      1.00      1.00        12
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       1.00      1.00      1.00         2
+   非法低价出让国有土地使用权罪       1.00      1.00      1.00         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         9
+     非法出售增值税专用发票罪       1.00      1.00      1.00        14
+        非法利用信息网络罪       1.00      1.00      1.00         3
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       1.00      1.00      1.00         4
+        非法经营同类营业罪       1.00      1.00      1.00         4
+          颠覆国家政权罪       1.00      1.00      1.00         1
+          食品监管渎职罪       1.00      1.00      1.00        32
+          骗取出口退税罪       1.00      1.00      1.00        25
+          骗取出境证件罪       1.00      1.00      1.00        16
+            骗购外汇罪       1.00      1.00      1.00         2
+
+         accuracy                           1.00       773
+        macro avg       1.00      1.00      1.00       773
+     weighted avg       1.00      1.00      1.00       773
+
+
+
+score: 1.0
+对训练集进行模型评估, End running time: 2022-04-17 21:22:56.199414
+Running time: 0:00:22.203641 Seconds
+对测试集进行模型评估, Start running time: 2022-04-17 21:22:56.199414
+
+对测试集进行模型评估：
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+classification_report: 
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+                   precision    recall  f1-score   support
+
+         为亲友非法牟利罪       0.00      0.00      0.00         2
+         传染病防治失职罪       1.00      1.00      1.00         1
+          侵犯商业秘密罪       0.57      0.89      0.70         9
+          侵犯通信自由罪       0.00      0.00      0.00         1
+           信用证诈骗罪       0.00      0.00      0.00         3
+            倒卖文物罪       0.93      0.87      0.90        15
+            假冒专利罪       1.00      1.00      1.00         1
+      出具证明文件重大失实罪       0.40      0.40      0.40         5
+         出售出入境证件罪       1.00      0.20      0.33         5
+            刑讯逼供罪       1.00      0.75      0.86         4
+       利用未公开信息交易罪       1.00      1.00      1.00         3
+         劫夺被押解人员罪       1.00      1.00      1.00         3
+            医疗事故罪       1.00      1.00      1.00         6
+          危害公共安全罪       0.00      0.00      0.00         3
+            变造货币罪       1.00      1.00      1.00         2
+       吸收客户资金不入账罪       1.00      0.67      0.80         3
+      失职致使在押人员脱逃罪       0.75      1.00      0.86         9
+            妨害清算罪       0.00      0.00      0.00         1
+       对有影响力的人行贿罪       0.00      0.00      0.00         1
+        工程重大安全事故罪       0.70      1.00      0.82         7
+      帮助信息网络犯罪活动罪       0.00      0.00      0.00         2
+          引诱幼女卖淫罪       1.00      0.50      0.67         2
+      引诱未成年人聚众淫乱罪       0.00      0.00      0.00         1
+        强令违章冒险作业罪       1.00      0.50      0.67         2
+          强迫他人吸毒罪       0.70      1.00      0.82        14
+          打击报复证人罪       0.73      0.73      0.73        11
+      扰乱国家机关工作秩序罪       0.67      1.00      0.80         4
+          扰乱法庭秩序罪       0.91      1.00      0.95        10
+        投放虚假危险物质罪       0.31      0.67      0.42         6
+        提供虚假证明文件罪       0.67      0.44      0.53         9
+        擅自设立金融机构罪       1.00      0.50      0.67         2
+    放纵制售伪劣商品犯罪行为罪       0.00      0.00      0.00         2
+            放纵走私罪       1.00      0.67      0.80         3
+          故意损毁文物罪       0.71      0.83      0.77         6
+        故意泄露国家秘密罪       0.90      1.00      0.95         9
+      教育设施重大安全事故罪       0.75      0.75      0.75         4
+            暴力取证罪       0.00      0.00      0.00         1
+          有价证券诈骗罪       1.00      1.00      1.00         3
+              洗钱罪       0.83      0.71      0.77         7
+          消防责任事故罪       0.67      1.00      0.80         6
+          煽动分裂国家罪       0.67      1.00      0.80         2
+      煽动暴力抗拒法律实施罪       0.00      0.00      0.00         1
+        煽动颠覆国家政权罪       0.00      0.00      0.00         1
+          环境监管失职罪       0.78      1.00      0.88         7
+          破坏交通工具罪       0.67      0.91      0.77        11
+            破坏军婚罪       1.00      0.75      0.86         4
+            破坏选举罪       1.00      1.00      1.00         2
+          私放在押人员罪       0.00      0.00      0.00         3
+        组织出卖人体器官罪       1.00      1.00      1.00         3
+组织未成年人进行违反治安管理活动罪       0.67      0.40      0.50         5
+            组织越狱罪       1.00      1.00      1.00         1
+     聚众扰乱军事管理区秩序罪       1.00      1.00      1.00         1
+            聚众淫乱罪       0.67      1.00      0.80         4
+              虐待罪       0.87      1.00      0.93        13
+          虐待被监管人罪       0.77      1.00      0.87        10
+            虚假广告罪       1.00      1.00      1.00         3
+            虚假诉讼罪       0.78      0.78      0.78         9
+          走私制毒物品罪       1.00      0.67      0.80         3
+          走私淫秽物品罪       0.00      0.00      0.00         2
+          走私贵重金属罪       0.80      1.00      0.89         4
+            过失决水罪       0.00      0.00      0.00         1
+        过失损坏交通设施罪       0.00      0.00      0.00         1
+      过失损坏易燃易爆设备罪       0.00      0.00      0.00         2
+        过失损坏电力设备罪       0.75      1.00      0.86         6
+          过失损毁文物罪       0.00      0.00      0.00         3
+            过失爆炸罪       0.80      1.00      0.89         4
+     违法发放林木采伐许可证罪       1.00      1.00      1.00         6
+        违规出具金融票证罪       1.00      1.00      1.00         3
+          逃避追缴欠税罪       1.00      0.67      0.80         3
+          金融凭证诈骗罪       0.62      0.73      0.67        11
+         销售侵权复制品罪       1.00      1.00      1.00         6
+          阻碍军事行动罪       1.00      1.00      1.00         1
+        阻碍军人执行职务罪       0.00      0.00      0.00         2
+   非法低价出让国有土地使用权罪       0.67      1.00      0.80         2
+     非法侵入计算机信息系统罪       1.00      1.00      1.00         4
+     非法出售增值税专用发票罪       0.86      1.00      0.92         6
+        非法利用信息网络罪       0.50      1.00      0.67         2
+     非法处置进口的固体废物罪       1.00      1.00      1.00         2
+            非法搜查罪       0.00      0.00      0.00         2
+        非法经营同类营业罪       0.00      0.00      0.00         2
+          颠覆国家政权罪       0.00      0.00      0.00         1
+          食品监管渎职罪       1.00      0.93      0.97        15
+          骗取出口退税罪       0.92      1.00      0.96        12
+          骗取出境证件罪       0.70      0.88      0.78         8
+            骗购外汇罪       1.00      1.00      1.00         1
+
+         accuracy                           0.79       383
+        macro avg       0.63      0.64      0.62       383
+     weighted avg       0.73      0.79      0.74       383
+
+
+
+score: 0.7859007832898173
+对测试集进行模型评估, End running time: 2022-04-17 21:23:06.891765
+Running time: 0:00:10.692351 Seconds
+getPreResult() End running time: 2022-04-17 21:23:06.896752
+Running time: 0:00:44.579734 Seconds
+End running time: 2022-04-17 21:23:06.896752
+Running time: 0:02:16.578576 Seconds
+
+Process finished with exit code 0
+"""
+
+max_df = 0.5 并且 指标不再通过分类文本报告输出，而是直接调用其具体的类输出：
+"""
+C:\ProgramData\anaconda3.1\python.exe B:/code_master/code/02PredictionOfJudgmentResults/ModelEvaluation_2To50.py
+Start running time: 2022-04-17 21:58:16.383638
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\bigdata\AppData\Local\Temp\jieba.cache
+Loading model cost 0.717 seconds.
+Prefix dict has been built successfully.
+getCVResult() Start running time: 2022-04-17 21:58:21.469723
+cv=2的分数为:  [0.79930796 0.77508651]
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+测试结果： {'fit_time': array([8.17606425, 7.77844453]), 'score_time': array([8.13080764, 8.26074672]), 'test_precision_macro': array([0.64661091, 0.64665281]), 'train_precision_macro': array([0.99852941, 1.        ]), 'test_recall_macro': array([0.60436873, 0.61285371]), 'train_recall_macro': array([0.99869281, 1.        ]), 'test_f1_macro': array([0.60429843, 0.60878783]), 'train_f1_macro': array([0.99852364, 1.        ])}
+getCVResult() End running time: 2022-04-17 21:59:43.605230
+Running time: 0:01:22.135507 Seconds
+getPreResult() Start running time: 2022-04-17 21:59:47.844779
+(tfidfTrain.toarray()).shape : 
+(773, 20321)
+对训练集进行模型评估, Start running time: 2022-04-17 22:00:10.265113
+precision_score :  1.0
+recall_score :  1.0
+f1_score :  1.0
+score :  1.0
+End running time: 2022-04-17 22:00:21.449679
+Running time: 0:00:11.184566 Seconds
+对训练集进行模型评估, Start running time: 2022-04-17 22:00:26.753321
+C:\Users\bigdata\AppData\Roaming\Python\Python37\site-packages\sklearn\metrics\_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+precision_score :  0.6313184201419495
+recall_score :  0.6444788218317631
+f1_score :  0.622690180398608
+score :  0.7859007832898173
+End running time: 2022-04-17 22:00:32.120352
+Running time: 0:00:05.367031 Seconds
+getPreResult() End running time: 2022-04-17 22:00:32.124344
+Running time: 0:00:44.279565 Seconds
+End running time: 2022-04-17 22:00:32.124344
+Running time: 0:02:15.740706 Seconds
+
+Process finished with exit code 0
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
